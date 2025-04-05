@@ -1,43 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="icon" type="img/x-icon" href="./img/fav-icon.png">
-    <title>TITLE</title>
+  <!-- Created by twalhovd on 04-03-2025 -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="description" />
+  <meta property="og:title" content="TITLE/NAME" />
+  <meta property="og:description" content="description." />
+  <meta property="og:image" content="./img/profile-dark.png" />
+  <meta property="og:url" content="https://example.com" />
+  <link rel="icon" type="image/x-icon" href="./img/subaru-icon.png" />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <title>TITLE</title>
 </head>
 <body>
-    <div class="container">
-        <img class="profile-img" src="./img/profile.png" alt="profile-img" />
-        <h1 class="profile-name">NAME</h1>
-        <h2 class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum suscipit, alias quidem quos sed consequuntur accusantium ut!
-            Est perspiciatis molestias illo laborum possimus perferendis, fuga molestiae repellendus, earum explicabo velit.</h2>
-            <!-- Make a copy of this line if you need more links
-                     <a class="link" href="https://www.example.com/" target="_blank">
-            <img class="link-icon" src="./img/example.svg" alt="example-icon" />
-            <span class="link-title">Example</span>
-        </a>
-        -->
-        <a class="link" href="https://www.instagram.com/" target="_blank">
-            <img class="link-icon" src="./img/instagram.svg" alt="instagram-icon" />
-            <span class="link-title">Instagram</span>
-        </a>
-        <a class="link" href="https://github.com/" target="_blank">
-            <img class="link-icon" src="./img/github-mark.svg" alt="github-icon" />
-            <span class="link-title">Github</span>
-        </a>
+  <button id="theme-toggle" aria-label="Toggle light/dark mode">🌙</button>
+
+  <div class="container">
+    <img
+      class="profile-img theme-logo"
+      src="./img/profile.png"
+      data-dark="./img/profile.png"
+      data-light="./img/profile.png"
+      alt="profile-img"
+    />
+    <h1 class="profile-name">NAME</h1>
+    <h2 class="bio">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur a maxime pariatur cum esse saepe libero.
+        Qui officia quam magnam impedit alias ut, nobis natus vero ipsum ipsa eius aliquam!</h2>
+
+        <!-- Instagram Link -->
+    <a class="social-link" href="https://www.instagram.com/" target="_blank">
+        <img
+        class="social-icon theme-logo"
+        src="./img/instagram-light.svg"
+        data-dark="./img/instagram-dark.svg"
+        data-light="./img/instagram-light.svg"
+        alt="instagram-icon"
+        />
+        <span>Instagram</span>
+    </a>
+
+    <a class="social-link" href="https://github.com/" target="_blank">
+        <img
+        class="social-icon theme-logo"
+        src="./img/github-light.svg"
+        data-dark="./img/github-light.svg"
+        data-light="./img/github-dark.svg"
+        alt="github-icon"
+        />
+      <span>Github</span>
+    </a>
+  </div>
+
+  <footer>
+    <h3>contact</h3>
+    <div class="email-wrapper">
+      <img class="email-icon theme-logo" src="./img/envelope.svg" alt="email-icon" />
+      <a href="mailto:mail@example.com">mail@example.com</a>
     </div>
-    <footer>
-        <div class="column">
-        <h3>contact</h3>
-        <img class="email-icon" src="./img/envelope.svg" alt="email-icon" />
-        <h5><a href="mailto:mail@example.com">mail@example.com</a></h5>
-        </div>
-    </footer>
-</div>
-    <div class="copyright">Copyright © 2025. All Rights Reserved.
-    </div>
+  </footer>
+
+  <div class="copyright">
+    Copyright © 2025. All Rights Reserved.
+  </div>
+
+  <script src="./js/theme-toggle.js"></script>
 </body>
 </html>
